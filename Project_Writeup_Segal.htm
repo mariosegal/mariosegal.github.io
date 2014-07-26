@@ -25,16 +25,16 @@ w\:* {behavior:url(#default#VML);}
   <o:Author>Mario Segal</o:Author>
   <o:LastAuthor>Mario Segal</o:LastAuthor>
   <o:Revision>2</o:Revision>
-  <o:TotalTime>2</o:TotalTime>
-  <o:LastPrinted>2014-07-26T12:38:00Z</o:LastPrinted>
-  <o:Created>2014-07-26T12:44:00Z</o:Created>
-  <o:LastSaved>2014-07-26T12:44:00Z</o:LastSaved>
+  <o:TotalTime>0</o:TotalTime>
+  <o:LastPrinted>2014-07-26T13:14:00Z</o:LastPrinted>
+  <o:Created>2014-07-26T13:15:00Z</o:Created>
+  <o:LastSaved>2014-07-26T13:15:00Z</o:LastSaved>
   <o:Pages>2</o:Pages>
-  <o:Words>797</o:Words>
-  <o:Characters>4549</o:Characters>
-  <o:Lines>37</o:Lines>
+  <o:Words>820</o:Words>
+  <o:Characters>4680</o:Characters>
+  <o:Lines>39</o:Lines>
   <o:Paragraphs>10</o:Paragraphs>
-  <o:CharactersWithSpaces>5336</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>5490</o:CharactersWithSpaces>
   <o:Version>14.0</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -384,6 +384,40 @@ p.MsoNormal, li.MsoNormal, div.MsoNormal
 	mso-hansi-theme-font:minor-latin;
 	mso-bidi-font-family:"Times New Roman";
 	mso-bidi-theme-font:minor-bidi;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 p.MsoCaption, li.MsoCaption, div.MsoCaption
 	{mso-style-priority:35;
 	mso-style-qformat:yes;
@@ -431,6 +465,18 @@ span.BalloonTextChar
 	font-family:"Lucida Grande";
 	mso-ascii-font-family:"Lucida Grande";
 	mso-hansi-font-family:"Lucida Grande";}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -443,6 +489,12 @@ span.BalloonTextChar
 	mso-hansi-theme-font:minor-latin;
 	mso-bidi-font-family:"Times New Roman";
 	mso-bidi-theme-font:minor-bidi;}
+ /* Page Definitions */
+@page
+	{mso-footnote-separator:url(":Project_Writeup_Segal_files:header.htm") fs;
+	mso-footnote-continuation-separator:url(":Project_Writeup_Segal_files:header.htm") fcs;
+	mso-endnote-separator:url(":Project_Writeup_Segal_files:header.htm") es;
+	mso-endnote-continuation-separator:url(":Project_Writeup_Segal_files:header.htm") ecs;}
 @page WordSection1
 	{size:8.5in 11.0in;
 	margin:1.0in 1.25in 1.0in 1.25in;
@@ -507,7 +559,7 @@ correct and some incorrect).</p>
 
 <p class=MsoNormal>The data was collected by Velloso, Bulling, Gellersen,
 Ugulino, and Fuks<span style="mso-spacerun:yes">&nbsp; </span>and their results
-presented in ÔQualitative Activity Recognition of Weight Lifting Exercises.Õ;
+presented in Qualitative Activity Recognition of Weight Lifting Exercises.;
 Proceedings of 4th International Conference in Cooperation with SIGCHI
 (Augmented Human '13) ; Stuttgart, Germany: ACM SIGCHI, 2013. The data was
 downloaded from http://groupware.les.inf.puc-rio.br/har </p>
@@ -567,18 +619,8 @@ of the classes and had very low accuracy.</p>
 packages using method rf. The Random Forest Model performed very well with reported
 accuracy of 98.2% and Kappa of 97.7%. These measures were estimated for the out
 of sample using 25 bootstrap samples. In reality when I applied the model to
-the training data set I was able to predict with 100% accuracy.</p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Results<o:p></o:p></b></p>
-
-<p class=MsoNormal>As can be seen in Figure 1 below, The Radom Forest Model has
-4 dumbbell and 1 belt principal components as the most important measures, with
-importance decreasing rapidly afterwards. This result suggests that a sensor in
-the dumbbell, which should be easy to accomplish, could provide sufficient
-feedback to the exerciser, however we did not test the accuracy of a dumbbell
-only sensor for prediction.</p>
+the training data set I was able to predict with 100% accuracy as shown in
+Figure 1.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -603,17 +645,45 @@ yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
  </v:formulas>
  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
  <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1026" type="#_x0000_t75"
- style='width:388pt;height:364pt;visibility:visible;mso-wrap-style:square'>
+</v:shapetype><v:shape id="_x0000_i1027" type="#_x0000_t75" style='width:388pt;
+ height:364pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="Project_Writeup_Segal_files/image001.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=390 height=366
-src="Project_Writeup_Segal_files/image002.png" v:shapes="Picture_x0020_1"><![endif]></span></p>
+src="Project_Writeup_Segal_files/image002.png" v:shapes="_x0000_i1027"><![endif]></span></p>
 
 <p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
 field-begin'></span><span style="mso-spacerun:yes">&nbsp;</span>SEQ Figure \*
 ARABIC <span style='mso-element:field-separator'></span><![endif]--><span
-style='mso-no-proof:yes'>1</span><!--[if supportFields]><span style='mso-no-proof:
-yes'><span style='mso-element:field-end'></span></span><![endif]--> </p>
+style='mso-no-proof:yes'>1</span><!--[if supportFields]><span style='mso-element:
+field-end'></span><![endif]--></p>
+
+<p class=MsoNormal><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt'>Figure 1 shows the actual versus predicted values
+using the Random Forest Model on the entire testing set, there are no misclassified
+observations.<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Results<o:p></o:p></b></p>
+
+<p class=MsoNormal>As can be seen in Figure 1 below, The Radom Forest Model has
+4 dumbbell and 1 belt principal components as the most important measures, with
+importance decreasing rapidly afterwards. This result suggests that a sensor in
+the dumbbell, which should be easy to accomplish, could provide sufficient
+feedback to the exerciser, however we did not test the accuracy of a dumbbell
+only sensor for prediction.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><span style='mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_1" o:spid="_x0000_i1026"
+ type="#_x0000_t75" style='width:388pt;height:364pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="Project_Writeup_Segal_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=390 height=366
+src="Project_Writeup_Segal_files/image004.png" v:shapes="Picture_x0020_1"><![endif]></span></p>
+
+<p class=MsoCaption>Figure 2 </p>
 
 <p class=MsoNormal><i style='mso-bidi-font-style:normal'><span
 style='font-size:10.0pt'>Variable Importance Plot for the Radom Forest Model. 4
@@ -647,18 +717,14 @@ dumbbell sensor with the observations colored by exercise type</p>
 yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_4" o:spid="_x0000_i1025"
  type="#_x0000_t75" style='width:388pt;height:364pt;visibility:visible;
  mso-wrap-style:square'>
- <v:imagedata src="Project_Writeup_Segal_files/image003.png" o:title=""/>
+ <v:imagedata src="Project_Writeup_Segal_files/image005.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img width=390 height=366
-src="Project_Writeup_Segal_files/image004.png" v:shapes="Picture_x0020_4"><![endif]></span></p>
+src="Project_Writeup_Segal_files/image006.png" v:shapes="Picture_x0020_4"><![endif]></span></p>
 
-<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
-field-begin'></span><span style="mso-spacerun:yes">&nbsp;</span>SEQ Figure \*
-ARABIC <span style='mso-element:field-separator'></span><![endif]--><span
-style='mso-no-proof:yes'>2</span><!--[if supportFields]><span style='mso-no-proof:
-yes'><span style='mso-element:field-end'></span></span><![endif]--></p>
+<p class=MsoCaption>Figure 3</p>
 
 <p class=MsoNormal><i style='mso-bidi-font-style:normal'><span
-style='font-size:10.0pt'>Figure 2 shows a scatter plot of the 2 most important
+style='font-size:10.0pt'>Figure 3 shows a scatter plot of the 2 most important
 principal components for the dumbbell sensor. One can see that observations are
 clustered together especially those for exercise E. <o:p></o:p></span></i></p>
 
@@ -689,8 +755,8 @@ this a challenging topic).</p>
 <p class=MsoNormal>I normally use my phone to track my training runs, it
 provides me with details like tempo and speed. I can see how the addition of
 some sensors could provide additional information such as fluid loss, and even
-critique my running form (for example a reminder that you are losing form can be
-all that one needs to focus on it which normally improves performance)</p>
+critique my running form (for example a reminder that you are losing form can
+be all that one needs to focus on it which normally improves performance)</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
