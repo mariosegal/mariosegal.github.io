@@ -25,16 +25,16 @@ w\:* {behavior:url(#default#VML);}
   <o:Author>Mario Segal</o:Author>
   <o:LastAuthor>Mario Segal</o:LastAuthor>
   <o:Revision>2</o:Revision>
-  <o:TotalTime>0</o:TotalTime>
+  <o:TotalTime>2</o:TotalTime>
   <o:LastPrinted>2014-07-26T13:14:00Z</o:LastPrinted>
-  <o:Created>2014-07-26T13:15:00Z</o:Created>
-  <o:LastSaved>2014-07-26T13:15:00Z</o:LastSaved>
-  <o:Pages>2</o:Pages>
-  <o:Words>820</o:Words>
-  <o:Characters>4680</o:Characters>
+  <o:Created>2014-07-27T01:29:00Z</o:Created>
+  <o:LastSaved>2014-07-27T01:29:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>831</o:Words>
+  <o:Characters>4740</o:Characters>
   <o:Lines>39</o:Lines>
-  <o:Paragraphs>10</o:Paragraphs>
-  <o:CharactersWithSpaces>5490</o:CharactersWithSpaces>
+  <o:Paragraphs>11</o:Paragraphs>
+  <o:CharactersWithSpaces>5560</o:CharactersWithSpaces>
   <o:Version>14.0</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -342,16 +342,20 @@ w\:* {behavior:url(#default#VML);}
  /* Font Definitions */
 @font-face
 	{font-family:"\FF2D\FF33 \660E\671D";
-	mso-font-charset:78;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
 @font-face
 	{font-family:"\FF2D\FF33 \660E\671D";
-	mso-font-charset:78;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
 @font-face
 	{font-family:Cambria;
 	panose-1:2 4 5 3 5 4 6 3 2 4;
@@ -617,10 +621,10 @@ of the classes and had very low accuracy.</p>
 
 <p class=MsoNormal>I then proceeded to use a Random Forest using the caret
 packages using method rf. The Random Forest Model performed very well with reported
-accuracy of 98.2% and Kappa of 97.7%. These measures were estimated for the out
-of sample using 25 bootstrap samples. In reality when I applied the model to
-the training data set I was able to predict with 100% accuracy as shown in
-Figure 1.</p>
+accuracy of 100% and Kappa of 100% (These results may change based on the
+initial seed). These measures were estimated for the out of sample using 25
+bootstrap samples. When I applied the model to the training data set I was able
+to predict with 100% accuracy as shown in Figure 1.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -654,13 +658,13 @@ src="Project_Writeup_Segal_files/image002.png" v:shapes="_x0000_i1027"><![endif]
 <p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
 field-begin'></span><span style="mso-spacerun:yes">&nbsp;</span>SEQ Figure \*
 ARABIC <span style='mso-element:field-separator'></span><![endif]--><span
-style='mso-no-proof:yes'>1</span><!--[if supportFields]><span style='mso-element:
-field-end'></span><![endif]--></p>
+style='mso-no-proof:yes'>1</span><!--[if supportFields]><span style='mso-no-proof:
+yes'><span style='mso-element:field-end'></span></span><![endif]--></p>
 
 <p class=MsoNormal><i style='mso-bidi-font-style:normal'><span
 style='font-size:10.0pt'>Figure 1 shows the actual versus predicted values
-using the Random Forest Model on the entire testing set, there are no misclassified
-observations.<o:p></o:p></span></i></p>
+using the Random Forest Model on the entire testing set, there are no
+misclassified observations.<o:p></o:p></span></i></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -695,8 +699,8 @@ for proper prediction.<o:p></o:p></span></i></p>
 
 <p class=MsoNormal>When I applied the model to the test set (after transforming
 it with the same principal component used for the train set), I was able to
-correctly predict all 20 cases, this result is a bit surprising as one never
-expects perfect prediction. </p>
+correctly predict all 20 cases, this result along with the 100% prediction is a
+bit surprising as one never expects perfect prediction. </p>
 
 <p class=MsoNormal>The researchers mentioned that expert trainers monitored the
 test subjects and that a relatively light dumbbell was used to avoid risk of
